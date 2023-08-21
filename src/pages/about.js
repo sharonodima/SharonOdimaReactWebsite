@@ -39,7 +39,7 @@ const StyledH1 = styled.h1`
 `
 
 function About() {
-  return (
+  return(
     <div className="about">
       <div class="container">
         <div class="row align-items-center my-5">
@@ -86,7 +86,7 @@ function About() {
                 <li>SQL</li>
               </ol>
             </div>
-
+            <p>I work well both as an individual as well as in group settings and I am more than willing to collaborate with other software engineers on any future projects.</p>
             <footer>
               <p>&copy; Sharon Odima</p>
             </footer>
