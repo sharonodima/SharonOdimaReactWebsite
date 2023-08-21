@@ -1,6 +1,6 @@
-import React from "react";
+import React, {useState, useEffect } from "react";
 import styled from "styled-components"
-
+import axios from "axios"
 
 const StyledNasaPhoto = styled.div`
     display: flex;
@@ -11,7 +11,7 @@ const StyledNasaPhoto = styled.div`
 `
 
 const StyledImg = styled.img`
-    max-width: 50%;
+    max-width: 30%;
     object-fit: cover;
     transition: all 1s;
     &:hover {
@@ -60,14 +60,26 @@ const StyledH3 = styled.h3`
 
 
 const NasaPhoto = (props) => {
+    const [photo, setPhoto] = useState(null)
+    useEffect (() => {
+        axios.get("https://api.nasa.gov/planetary/apod?api_key=q38xH01AefB5EUaEqt8hXQwGJLRGhTFa3M4PvaKF")
+        .then(res => {
+          console.log(res);
+          setPhoto(res.data);
+        })
+        .catch(err => console.error(err))
+      }, [])
+    
+    if (!photo) {
+        return null
+    }
     return (
         <StyledNasaPhoto className = "nasa-photo-wrapper">
-            <StyledH3>{props.photo.title}</StyledH3>
-            <StyledP>{props.photo.date}</StyledP>
-            <StyledImg src = {props.photo.hdurl}></StyledImg>
-            <StyledP>{props.photo.explanation}</StyledP>
+            <StyledH3>{photo.title}</StyledH3>
+            <StyledP>{photo.date}</StyledP>
+            <StyledImg src = {photo.hdurl}></StyledImg>
+            <StyledP>{photo.explanation}</StyledP>
         </StyledNasaPhoto>
     )
-}
-
+    }
 export default NasaPhoto;
