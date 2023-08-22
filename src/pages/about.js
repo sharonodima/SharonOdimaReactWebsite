@@ -1,45 +1,45 @@
 import React from "react";
-import styled from "styled-components"
+import styled from "styled-components";
 
-const StyledH3= styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-`
+const StyledH3 = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 const StyledH1 = styled.h1`
-    transition: all 1s;
-    &:hover {
-        transform: scale(1.1);
-    }
-    font-family: 'Fruktur', cursive;
- 	font-size: 3em;
- 	border-bottom: 2px solid pink;
- 	border-right: 2px solid pink;
- 	border-left: 2px solid pink;
- 	text-align: center;
- 	box-shadow: 4px 4px 5px #888888;
-    text-transform: uppercase;
-    background-image: linear-gradient(
-        -225deg,
-        #231557 0%,
-        #44107a 29%,
-        #ff1361 67%,
-        #fff800 100%
-    );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
-`
+  transition: all 1s;
+  &:hover {
+    transform: scale(1.1);
+  }
+  font-family: "Fruktur", cursive;
+  font-size: 3em;
+  border-bottom: 2px solid pink;
+  border-right: 2px solid pink;
+  border-left: 2px solid pink;
+  text-align: center;
+  box-shadow: 4px 4px 5px #888888;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+`;
 
 function About() {
-  return(
+  return (
     <div className="about">
       <div class="container">
         <div class="row align-items-center my-5">
@@ -86,11 +86,15 @@ function About() {
                 <li>SQL</li>
               </ol>
             </div>
-            <p>I work well both as an individual as well as in group settings and I am more than willing to collaborate with other software engineers on any future projects.</p>
-            <footer>
-              <p>&copy; Sharon Odima</p>
-            </footer>
+            <p>
+              I work well both as an individual as well as in group settings and
+              I am more than willing to collaborate with other software
+              engineers on any future projects.
+            </p>
           </StyledH3>
+          <footer>
+            <p>&copy; Sharon Odima</p>
+          </footer>
         </div>
       </div>
     </div>

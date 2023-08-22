@@ -16,7 +16,7 @@ function Navigation() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false)
   return (
     <div>
-    <button onClick = {() =>{setHamburgerOpen(!hamburgerOpen)}}>+</button>
+    <button onClick = {() =>{setHamburgerOpen(!hamburgerOpen)}}>MENU</button>
     <StyledNav override = {hamburgerOpen}>
       <div style={{ margin: '10px' }}>
           <NavLink to="/" style={({ isActive }) => ({ 
