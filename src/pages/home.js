@@ -20,7 +20,7 @@ const StyledH1 = styled.h1`
   &:hover {
     transform: scale(1.1);
   }
-  font-family: "Fruktur", cursive;
+ 
   font-size: 3em;
   border-bottom: 2px solid pink;
   border-right: 2px solid pink;
@@ -29,7 +29,7 @@ const StyledH1 = styled.h1`
   box-shadow: 4px 4px 5px #888888;
   text-transform: uppercase;
   background-image: linear-gradient(
-    -225deg,
+    -2deg,
     #231557 0%,
     #44107a 29%,
     #ff1361 67%,
@@ -50,7 +50,7 @@ const Home = () => {
   return (
     <>
       <StyledNasaPhoto>
-        <StyledH1>Hi! I'm Sharon Odima</StyledH1>
+        <StyledH1>Hi, I'm Sharon Odima</StyledH1>
         <StyledP>I am a software developer living in Raleigh, NC.</StyledP>
         <img src={passport} alt="Sharon Odima - Profile" class="center" />
         <StyledP>
