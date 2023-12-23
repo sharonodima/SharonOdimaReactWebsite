@@ -168,15 +168,7 @@ img:hover{
     background-image: url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif)
   }
   
-  .snippet1{
-    width: 100%;
-    padding-left: 40%;
-  }
-
-  .snippet2{
-    width: 100%;
-    padding-left: 0%;
-  }
+  
 
   .border-top{
     margin: 5%
