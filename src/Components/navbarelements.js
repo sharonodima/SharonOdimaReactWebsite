@@ -7,7 +7,7 @@ height: 85px;
 display: flex;
 justify-content: space-evenly;
 padding: 0.2rem calc((100vw - 1000px) / 2);
-z-index: 12;
+z-index: 12
 `;
 
 export const NavLink = styled(Link)`
