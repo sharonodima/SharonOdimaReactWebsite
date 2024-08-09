@@ -49,7 +49,7 @@ function About() {
             <p>
               I was born and raised in Kenya, Africa and I have been in the
               states since January 2010. During this time, I have been a jack of
-              all trades, as you can see on my{" "}
+              all trades, as you can see on my
               <a href="/src/assets/SharonOdimaEngineeringResume2024.pdf" download>
                 resume
               </a>
