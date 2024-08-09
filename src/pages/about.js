@@ -50,7 +50,7 @@ function About() {
               I was born and raised in Kenya, Africa and I have been in the
               states since January 2010. During this time, I have been a jack of
               all trades, as you can see on my{" "}
-              <a href="/src/assets/Sharon Odima Engineering Resume 2024.pdf" download>
+              <a href="/src/assets/SharonOdimaEngineeringResume2024.pdf" download>
                 resume
               </a>
               , dabbling in the travel industry as a flight attendant, in
